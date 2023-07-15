@@ -14,7 +14,7 @@ const Layout = () => {
 
   const onLayoutRootView = useCallback(async () => {
     if (fontsLoaded) {
-      await SplashScreen.hideAsync();
+      await SplashScreen.hideAsync(); // só mostramos a home page quando as fontes estão carregadas
     }
   }, [fontsLoaded]);
 
